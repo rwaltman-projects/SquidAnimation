@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment2</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="800" height="800">
+    Please use a browser that supports "canvas"
+    </canvas><br>
+    
+    <p> 
+    Rotate X <input type = "range" min="0" max="360" value="0" class="slide" id="xSlide">
+    Rotate Y <input type = "range" min="0" max="360" value="0" class="slide" id="ySlide">
+    Rotate Z <input type = "range" min="0" max="360" value="0" class="slide" id="zSlide"><br>
+    Tentacles <input type = "range" min="-3" max="100" value="0" class="slide" id="tSlide">
+    Head <input type = "range" min="-10" max="10" value="0" class="slide" id="hSlide">
+    Flap <input type = "range" min="-20" max="20" value="0" class="slide" id="fSlide">
+    </p>
+    
+    <button type = "button" id = "animateButton">Animate</button><br>
+
+    <p>
+        The Animate button toggles between an animation and a stationary model that allows for<br>
+        manipulation of joints and global roation.
+    </p>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/matrixLib.js"></script>
+    <script src="as2.js"></script>
+    <script src="Shape.js"></script>
+    <script src="Squid.js"></script>
+  </body>
+</html>
